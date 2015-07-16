@@ -4,6 +4,7 @@ $navbar-default-color: $light-orange;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Lato:900);
 
 #logo {
     margin-top: 10px;
@@ -44,6 +45,7 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 3em;
+    font-family: 'Lato', sans-serif;
     letter-spacing: -2px;
     margin-bottom: 30px;
     text-align: center;
@@ -51,6 +53,7 @@ h1 {
 
 h2 {
     font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
     margin-bottom: 30px;
     text-align: center;
     font-weight: normal;
