@@ -1,0 +1,25 @@
+<%= render 'shared/page_title', title: "All Recipes" %>
+
+<% @recipes.each do |x|  %>
+    <div class="row">
+        
+        <div class="col-md-2">
+            <section class="chef_info center">
+                <%= gravatar_for x.chef, size: 100 %>
+                <h5>Chef name: <%= x.chef.chefname %> </h5>
+            </section>
+            
+        </div>
+        
+        <div class="col-lg-8 well">
+            <h4><%= link_to x.name, recipe_path(x) %></h4>
+            <p><%= x.summary %></p>
+            <p>
+                <span class='quiet'><small> <%= time_ago_in_words(x.created_at) %> ago </small></span>
+                
+            </p>
+        </div>
+        
+    </div>
+    <hr/>
+<% end %>
